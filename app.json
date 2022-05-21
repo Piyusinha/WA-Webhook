@@ -1,0 +1,6 @@
+{
+    "name": "Whatsapp Webhooks",
+    "description": "Whatsapp Webhook implementation",
+    "repository": "https://github.com/Piyusinha/WA-Webhook",
+    "keywords": ["node", "whatsapp", "webhook"]
+  }
