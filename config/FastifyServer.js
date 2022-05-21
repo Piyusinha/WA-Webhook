@@ -3,6 +3,7 @@ const fastify = require('fastify')({
     trustProxy: true
 })
 const path = require('path');
+const { WAsocket } = require('../socketcontrollers/WAsocket');
 const { initAllRoutes } = require('./RoutesConfig');
 const start = async () => {
     try {
@@ -14,6 +15,11 @@ const start = async () => {
     }
 }
 exports.initServer = () => {
+
+    fastify.register(require('fastify-websocket'));
+
+    fastify.get('/wasocket', { websocket: true },WAsocket);
+
     fastify.get('/', async (request, reply) => {
         return reply.send({ message: "Server Online" })
     })

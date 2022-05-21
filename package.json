@@ -13,8 +13,9 @@
     "body-parser": "^1.19.2",
     "dotenv": "^16.0.0",
     "fastify": "^3.28.0",
+    "fastify-websocket": "^4.3.0",
     "https": "^1.0.0",
-    "nodemon": "^2.0.15",
-    "mongoose": "^6.2.10"
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
   }
 }

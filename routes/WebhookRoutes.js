@@ -1,4 +1,4 @@
-const Whatsapp =  require('../whatsapp-webhook/WhatsappWebhook')
+const Whatsapp =  require('../controllers/WhatsappWebhookControllers')
 const webhookRoutes = [
     {
       method: 'POST',
