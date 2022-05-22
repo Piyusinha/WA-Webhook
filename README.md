@@ -32,6 +32,13 @@ Verify token will be used on setup webhook on Meta For Developers
 
 [Go to File for change VERIFY_TOKEN ](https://github.com/Piyusinha/WA-Webhook/blob/ef481e9fe2c0c4b12cbf7edf30b9b1e82903f779/controllers/WhatsappWebhookControllers.js#L19)
 
+## Change Mongo DB url 
+a. Please use your own mongoDB cluster. </br>
+  You can create you own mongoDB cluster on https://www.mongodb.com/atlas/database 
+  
+b. Change Cluster URL in .env file
+
+
 ## Push the change and Deploy on Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
