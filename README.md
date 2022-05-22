@@ -76,7 +76,7 @@ Add Phone number </br>
 a. Setup Webhook </br>
 ![image](https://user-images.githubusercontent.com/40850657/169705714-37f10788-b66b-4ed6-883b-4881fe65617c.png)
 
-b. Add verify token( Check in Server setup steps ) and Webhook URL (https://heroku-deployed-url/webhook) </br>
+b. Add verify token( Check in Server setup steps ) and Webhook URL (https://yourherokuurl/webhook) </br>
 ![image](https://user-images.githubusercontent.com/40850657/169705754-9cad01cb-fce2-4594-8055-2f8cc98b3a14.png)
 
 c. Click on Manage and Subscribe to Message
@@ -87,7 +87,7 @@ c. Click on Manage and Subscribe to Message
 
 # Test socket connection 
 ```
-Socket URL = https://heroku-deployed-url/wasocket
+Socket URL = https://yourherokuurl/wasocket
 Connect with socket using POSTMAN and send any message to number which you verify on META platform
 ```
 
