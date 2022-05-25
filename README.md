@@ -20,7 +20,7 @@ git clone https://github.com/Piyusinha/WA-Webhook
 ### Install all dependency
 
 ```bash
-npm -i
+npm i
 ```
 ### Run server
 ```bash
