@@ -16,7 +16,7 @@ exports.postWebhook = async (req, res, next) => {
     }
 }
 exports.getWebhook = async (req, res, next) => {
-    const VERIFY_TOKEN = "hello";
+    const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
     // Parse params from the webhook verification request
     let mode = req.query['hub.mode'];
