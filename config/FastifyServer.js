@@ -18,8 +18,6 @@ exports.initServer = () => {
 
     fastify.register(require('fastify-websocket'));
 
-    fastify.get('/wasocket', { websocket: true },WAsocket);
-
     fastify.get('/', async (request, reply) => {
         return reply.send({ message: "Server Online" })
     })
