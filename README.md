@@ -30,7 +30,7 @@ npm start
 Verify token will be used on setup webhook on Meta For Developers 
 
 
-[Go to File for change VERIFY_TOKEN ](https://github.com/Piyusinha/WA-Webhook/blob/ef481e9fe2c0c4b12cbf7edf30b9b1e82903f779/controllers/WhatsappWebhookControllers.js#L19)
+[Go to .env File to change VERIFY_TOKEN ](https://github.com/Piyusinha/WA-Webhook/blob/d2b88ec7415b0f3ed20329a19793ab28a0afbb90/.env#L2)
 
 ## Change Mongo DB url 
 a. Please use your own mongoDB cluster. </br>
@@ -38,6 +38,8 @@ a. Please use your own mongoDB cluster. </br>
   
 b. Change Cluster URL in .env file
 
+## Change JWT secret Key
+You can change secret key in .env file (Remember - If your are not using default secret key you should also pass it in WhatsappSDK)
 
 ## Push the change and Deploy on Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -88,6 +90,7 @@ c. Click on Manage and Subscribe to Message
 # Test socket connection 
 ```
 Socket URL = https://yourherokuurl/wasocket
+Add Header = Bearer token  \\You have to generate JWT token
 Connect with socket using POSTMAN and send any message to number which you verify on META platform
 ```
 
