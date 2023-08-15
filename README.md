@@ -41,8 +41,12 @@ b. Change Cluster URL in .env file
 ## Change JWT secret Key
 You can change [secret key](https://github.com/Piyusinha/WA-Webhook/blob/d2b88ec7415b0f3ed20329a19793ab28a0afbb90/.env#L3) in .env file (Remember - If your are not using default secret key you should also pass it in WhatsappSDK)
 
-## Push the change and Deploy on Heroku
+## Push the change and Deploy on Heroku or render
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+<a href="https://render.com/deploy?repo=https://github.com/Piyusinha/WA-Webhook">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" />
+</a>
 
 
 ## [Setup Meta for Developers](https://developers.facebook.com/)
