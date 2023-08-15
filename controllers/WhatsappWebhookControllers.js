@@ -8,9 +8,11 @@ exports.postWebhook = async (req, res, next) => {
 
     // Validate the webhook
     if (req.body.object) {
+        console.log("Incoming webhook: " + req.body.object);
         await CreateWhatsappData(req.body)
         res.status(200).send({success:true});
     } else {
+        console.log("Incoming webhook: Error" + "Notfond");
         // Return a '404 Not Found' if event is not from a whatsApp API
         res.status(404).send({success:false});
     }
